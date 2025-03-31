@@ -151,13 +151,13 @@ class AddressStandardizer:
         Returns:
             str: The standardized street name.
         """
-        street_map = {
-                "n": "North",
-                "s": "South",
-                "e": "East",
-                "w": "West"
-        }
-        if not street_name in ["west", "east", "north", "south"]: # streetname are normalized in lowercase 
+        street_map = {"n": "North", "s": "South", "e": "East", "w": "West"}
+        if not street_name in [
+            "west",
+            "east",
+            "north",
+            "south",
+        ]:  # streetname are normalized in lowercase
             return street_map[street_name]
 
     def standardize_street_postype(self, street_name):

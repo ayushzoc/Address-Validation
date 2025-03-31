@@ -39,4 +39,6 @@ OUTPUT FORMAT EXAMPLE:
 
 
 
-    """.format(KEY_DESCRIPTION)
+    """.format(
+    KEY_DESCRIPTION
+)

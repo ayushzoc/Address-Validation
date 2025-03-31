@@ -14,8 +14,6 @@ KEY_DESCRIPTION = {
 }
 
 
-
-
 EXTRACTION_PROMPT = """
 You are a document extraction specialist for rental lease documents. You will be provided with a lease document and the keys that you have to extract the values of. You have to extract the values of the keys by analysing the keys and the descriptions of those keys.
 Do not use json word in output.
@@ -23,4 +21,6 @@ Ensure that:
 - **Month-to-Month Leases:** If the lease is identified as a month-to-month agreement and no end date is explicitly stated, calculate the end date as one month after the start date.
 - **Date Format:** Use the YYYY-MM-DD format for all dates.
 Escape special characters in the final response and extract the values of the following keys: {}
-""".format(KEY_DESCRIPTION)
+""".format(
+    KEY_DESCRIPTION
+)

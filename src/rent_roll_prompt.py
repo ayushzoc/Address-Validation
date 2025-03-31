@@ -17,7 +17,7 @@ KEY_DESCRIPTION = {
     "property_owner_name (individual/company)": "The full name of the individual or company that owns the property. This is often found at the top of the rent roll document and may also include contact information.",
     "property_address": "The complete address of the rental property. Normalize addresses to handle variations in formatting, such as repeated state abbreviations (e.g., 'MN, MN', 'MN MNMN'). Standardize by removing duplicate state abbreviations and any unit numbers. Include only the unique street address, city, state, and zip code.",
     "date": "The specific date when the rent roll document is created or updated. Format: YYYY-MM-DD.",  # Explicitly use YYYY
-    "unit_numbers": "A list of the specific identifiers or numbers for the rental units occupied by tenants. Consider Apartment Number is also a unit number." # Changed to list
+    "unit_numbers": "A list of the specific identifiers or numbers for the rental units occupied by tenants. Consider Apartment Number is also a unit number.",  # Changed to list
 }
 
 
@@ -45,4 +45,6 @@ OUTPUT FORMAT EXAMPLE
     Do not use json word in output. Just return key-value pairs inside curly braces.
     KEYS AND DESCRIPTION
     {}
-""".format(KEY_DESCRIPTION)
+""".format(
+    KEY_DESCRIPTION
+)
